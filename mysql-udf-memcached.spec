@@ -5,6 +5,7 @@
 #   %{_libdir}/mysql would be more appropriate (but then need to
 #   insert .so with full path? patch mysqld?)
 Summary:	Memcached UDF for MySQL
+Summary(pl):	Memcached UDF dla MySQLa
 Name:		mysql-udf-memcached
 Version:	0
 Release:	0.2
@@ -24,6 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 MySQL UDF interface to memcached.
+
+%description -l pl
+MySQLowy Interface UDF do memcached.
 
 %prep
 %setup -q -c -T
