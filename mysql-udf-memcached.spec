@@ -27,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 MySQL UDF interface to memcached.
 
 %description -l pl
-MySQLowy interfejs UDF do memcached.
+MySQL-owy interfejs UDF do memcached.
 
 %prep
 %setup -q -c -T
