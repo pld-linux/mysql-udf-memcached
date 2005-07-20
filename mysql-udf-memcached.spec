@@ -10,7 +10,6 @@ Name:		mysql-udf-memcached
 Version:	0
 Release:	0.2
 Epoch:		0
-# probably BSD will ask jan
 License:	BSD
 Group:		Applications/Databases
 Source0:	http://jan.kneschke.de/projects/mysql/udf/udf_memcache.c
