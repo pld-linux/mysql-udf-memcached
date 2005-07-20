@@ -5,7 +5,7 @@
 #   %{_libdir}/mysql would be more appropriate (but then need to
 #   insert .so with full path? patch mysqld?)
 Summary:	Memcached UDF for MySQL
-Summary(pl):	Memcached UDF dla MySQLa
+Summary(pl):	Memcached UDF dla MySQL-a
 Name:		mysql-udf-memcached
 Version:	0
 Release:	0.2
@@ -35,7 +35,7 @@ cp %{SOURCE0} .
 cp %{SOURCE1} .
 
 %build
-%{__cc} %{rpmcflags} -DDBUG_OFF -shared -o udf_memcache.so udf_memcache.c \
+%{__cc} %{rpmcflags} -fPIC -DDBUG_OFF -shared -o udf_memcache.so udf_memcache.c \
 	-lmemcache $(mysql_config --cflags)
 
 %install
